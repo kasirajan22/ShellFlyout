@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShellFlyout.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ShellFlyout"
+    Shell.FlyoutBehavior="Flyout" 
+    FlyoutBackgroundColor="LightGray"
+    Title="ShellFlyout" FlyoutIcon="chat.png">
+
+    <FlyoutItem Title="One" FlyoutIcon="chat.png">
+        <ShellContent
+            Title="One"
+            ContentTemplate="{DataTemplate local:ChatPage}"
+            Route="OnePage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Two" FlyoutIcon="contacts.png">
+        <ShellContent
+            Title="Two"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="TwoPage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Three" FlyoutIcon="todo.png">
+        <ShellContent
+            Title="Three"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="ThreePage" />
+    </FlyoutItem>
+    <FlyoutItem Title="Four" FlyoutIcon="check.png">
+        <ShellContent
+            Title="Four"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="FourPage" />
+    </FlyoutItem>
+</Shell>
